@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnoQuest: Hackathon 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Make sure the CSS file is properly linked -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">
+            <i class="fas fa-rocket"></i>
+            InnoQuest
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a data-scroll="home">Home</a></li>
+            <li><a data-scroll="about">About</a></li>
+            <li><a data-scroll="organizers">Organizers</a></li>
+            <li><a data-scroll="why-join">Why Join</a></li>
+            <li><a data-scroll="timeline">Timeline</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="stars" id="stars"></div>
+        <div class="floating floating-1">
+            <i class="fas fa-satellite"></i>
+        </div>
+        <div class="floating floating-2">
+            <i class="fas fa-meteor"></i>
+        </div>
+        <div class="floating floating-3">
+            <i class="fas fa-globe-americas"></i>
+        </div>
+        <div class="hero-content">
+            <h1>🌌 InnoQuest: Hackathon 2025</h1>
+            <p class="tagline">"Innovate Beyond Stars. Code the Cosmos."</p>
+            <a data-scroll="about" class="register-btn">Register Now</a>
+        </div>
+        <div class="scroll-indicator" data-scroll="about"></div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">🧑‍🚀 About Us</h2>
+        <p class="team-subtitle">InnoQuest is more than just a hackathon – it's a launchpad for aspiring innovators and tech visionaries to solve real-world problems through futuristic, space-inspired solutions.</p>
+       
+        <h3 style="text-align: center; margin-top: 30px; color: var(--light-blue);">Core Team</h3>
+        <div class="team-container">
+            <div class="team-card">
+                <h3>Tiya</h3>
+                <p class="role">Team Lead</p>
+            </div>
+            <div class="team-card">
+                <h3>Lobhas</h3>
+                <p class="role">Designer 1</p>
+            </div>
+            <div class="team-card">
+                <h3>[Name]</h3>
+                <p class="role">Designer 2</p>
+            </div>
+            <div class="team-card">
+                <h3>[Name]</h3>
+                <p class="role">Tech Coordinator</p>
+            </div>
+            <div class="team-card">
+                <h3>[Name]</h3>
+                <p class="role">Content & Communications</p>
+            </div>
+        </div>
+        <h3 style="text-align: center; margin: 50px 0 30px; color: var(--light-blue);">Extended Contributors</h3>
+        <div class="team-container">
+            <div class="team-card">
+                <h3>Team [Alpha/Design/Tech]</h3>
+                <p class="role">[Name] – UI/UX</p>
+                <p class="role">[Name] – System Integrator</p>
+                <p class="role">[Name] – Research & Development</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers" class="organizers">
+        <h2 class="section-title">🔧 Event Organizers & Support</h2>
+        <p class="team-subtitle">A special thanks to the dedicated team of organizers, faculty mentors, and volunteers making InnoQuest a reality:</p>
+       
+        <div class="organizer-group">
+            <h3><i class="fas fa-users"></i> Event Coordinators:</h3>
+            <div class="organizer-list">
+                <div class="organizer-item">
+                    <h4>[Coordinator Name 1]</h4>
+                    <p>Event Coordinator</p>
+                </div>
+                <div class="organizer-item">
+                    <h4>[Coordinator Name 2]</h4>
+                    <p>Event Coordinator</p>
+                </div>
+            </div>
+        </div>
+        <div class="organizer-group">
+            <h3><i class="fas fa-chalkboard-teacher"></i> Faculty Coordinators:</h3>
+            <div class="organizer-list">
+                <div class="organizer-item">
+                    <h4>[Faculty Name 1]</h4>
+                    <p>Technical Mentor</p>
+                </div>
+                <div class="organizer-item">
+                    <h4>[Faculty Name 2]</h4>
+                    <p>Innovation Guide</p>
+                </div>
+            </div>
+        </div>
+        <div class="organizer-group">
+            <h3><i class="fas fa-cogs"></i> Technical & Logistics Support:</h3>
+            <div class="organizer-list">
+                <div class="organizer-item">
+                    <h4>[Name]</h4>
+                    <p>Registration & Submission System</p>
+                </div>
+                <div class="organizer-item">
+                    <h4>[Name]</h4>
+                    <p>Scheduling & Platform Management</p>
+                </div>
+            </div>
+        </div>
+        <div class="organizer-group">
+            <h3><i class="fas fa-bullhorn"></i> Marketing & Outreach Team:</h3>
+            <div class="organizer-list">
+                <div class="organizer-item">
+                    <h4>[Name]</h4>
+                    <p>Social Media Promotions</p>
+                </div>
+                <div class="organizer-item">
+                    <h4>[Name]</h4>
+                    <p>Outreach & Partnerships</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Us Section -->
+    <section id="why-join" class="why-join">
+        <h2 class="section-title">🚀 Why Join Us?</h2>
+        <p class="motto">"Code. Collaborate. Conquer the Cosmos."</p>
+        <p>Join InnoQuest to challenge your limits, meet brilliant minds, and build solutions that are out of this world. It's your gateway to learning, networking, and innovating with a purpose.</p>
+       
+        <div class="benefits">
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Innovation</h3>
+                <p>Push the boundaries of technology and create solutions that address real-world challenges with a space-inspired twist.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Collaboration</h3>
+                <p>Work with talented individuals from diverse backgrounds and form connections that last beyond the hackathon.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3>Recognition</h3>
+                <p>Showcase your skills to industry experts and win prizes that can boost your career in the tech space.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <h2 class="section-title">📅 Hackathon Timeline</h2>
+        <p class="team-subtitle">All processes will be managed through a centralized digital system:</p>
+       
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+           
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-dot"></div>
+                    <h3>Registration Phase</h3>
+                    <p>Teams register via an official form on the portal.</p>
+                    <ul>
+                        <li>Open registration for all interested participants</li>
+                        <li>Team formation and profile creation</li>
+                        <li>Access to resources and guidelines</li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-dot"></div>
+                    <h3>Idea Submission</h3>
+                    <p>Submit your project brief or pitch deck in the initial round.</p>
+                    <ul>
+                        <li>Concept proposal with clear objectives</li>
+                        <li>Technology stack and implementation plan</li>
+                        <li>Potential impact and innovation factors</li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-dot"></div>
+                    <h3>Hack Submission</h3>
+                    <p>Teams will upload their working prototype/demo + PPT before the deadline.</p>
+                    <ul>
+                        <li>Functional prototype with core features</li>
+                        <li>Comprehensive presentation slides</li>
+                        <li>Documentation and video demonstration</li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-dot"></div>
+                    <h3>Review & Judging</h3>
+                    <p>Each submission will be auto-assigned to designated judges/examiners based on category.</p>
+                    <ul>
+                        <li>Judges review with structured scorecards</li>
+                        <li>Evaluation based on innovation, implementation, and impact</li>
+                        <li>Feedback provided to all participants</li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-dot"></div>
+                    <h3>Results Announcement</h3>
+                    <p>Final scores and feedback will be published through the same platform.</p>
+                    <ul>
+                        <li>Winning teams showcased on all platforms</li>
+                        <li>Certificate distribution for all participants</li>
+                        <li>Opportunities for incubation and mentorship</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-rocket"></i> InnoQuest 2025
+            </div>
+            <p>Innovate Beyond Stars. Code the Cosmos.</p>
+            <div class="social-links">
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="copyright">© 2025 InnoQuest Hackathon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Make sure the JS file is properly linked at the end of the body -->
+    <script src="./script.js"></script>
+</body>
+</html>
